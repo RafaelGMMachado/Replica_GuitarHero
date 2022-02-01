@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "Bostero";
+    src: local(Bostero), url(Fontes/Bostero.ttf);
+}
+@font-face {
+    font-family: "Bosskid";
+    src: local(Bosskid), url(Fontes/Bosskids.otf);
+}
+.pulsate {
+    animation: boxpulsate 1.5s infinite alternate;
+}
+@keyframes boxpulsate {
+
+    100% {
+
+        box-shadow:
+                0 0 3px #fff,
+                0 0 4px #fff,
+                0 0 6px #fff,
+                0 0 6px black,
+                0 0 20px black,
+                0 0 20px black,
+                0 0 20px black,
+                0 0 25px black;
+
+    }
+
+    0% {
+
+        box-shadow:
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 10px #fff,
+                0 0 10px #fff,
+                0 0 10px #fff,
+                0 0 18px #fff;
+
+    }
+}
+@keyframes textpulsate {
+
+    100% {
+
+        text-shadow:
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 3px #fff,
+                0 0 3px #00eaff,
+                0 0 8px #00eaff,
+                0 0 8px #00eaff,
+                0 0 8px #00eaff,
+                0 0 8px #00eaff;
+
+    }
+
+    0% {
+
+        text-shadow:
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 2px #fff,
+                0 0 2px #00eaff,
+                0 0 10px #00eaff,
+                0 0 10px #00eaff,
+                0 0 10px #00eaff,
+                0 0 18px #00eaff;
+
+    }
+}
+/* Cabeçalho */
+header{
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background: #1d2028;
+    border-bottom: solid dimgray;
+}
+header h1{
+    padding: 0;
+    width: 100%;
+    color: #b6b3b3;
+    font-size: xxx-large;
+}
+#logo-fei{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+/* Corpo da Página */
+body {
+    /*background-color: #1d2028;*/
+    background-image: url("Gifs/Black.gif");
+    padding-top: 50%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+#jogo{
+    color: lightgray;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    padding: 10px;
+    font-family: Bostero;
+    color: lightgray;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    text-shadow:
+            0 0 2px #000000,
+            0 0 2px #000000,
+            0 0 3px #000000,
+            0 0 3px #000000,
+            0 0 8px #000000,
+            0 0 8px #000000,
+            0 0 8px #000000,
+            0 0 8px #000000;
+}
+h2{
+    font-size: 14pt;
+    text-align: center;
+    color: white;
+    border-style: solid;
+    background-color: dodgerblue;
+    border-width: 1px;
+    border-color: blue;
+    margin-left: 8%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-shadow: #000 1px 1px 1px;
+
+
+}
+h3{
+    border: solid;
+    border-color: ghostwhite;
+    background-color: white;
+    text-align: center;
+}
+p{
+    font-family: "Times New Roman";
+    color: #f9f9f9;
+    font-size: 25px;
+    position: relative;
+    top: 150px;
+}
+
+/* Dados dos Desenvolvedores - Rafael */
+.kit_rafael{
+    position: absolute;
+    margin-left: 12%;
+    top: 12%;
+    background-image: url("img/teste3.jpg");
+    border-spacing: 1px;
+    border-style: outset;
+    border-color: white;
+    box-shadow:
+            0 0 1px #000000,
+            0 0 1px #000000,
+            0 0 1px #000000,
+            0 0 1px #fff,
+            0 0 4px #fff,
+            0 0 4px #fff,
+            0 0 4px #fff,
+            0 0 10px #fff;
+    animation: boxpulsate 1.5s infinite alternate;
+}
+#img_rafael{
+    position: relative;
+    border: solid;
+    border-spacing: 1px;
+    border-color: grey;
+    top: 0;
+}
+#idade_r_left{
+    text-align: left;
+    padding-left: 5%;
+    font-size: 14pt;
+    color: black;
+
+}
+#idade_r_right {
+    text-align: left;
+    padding-left: 5%;
+    font-size: 14pt;
+    color: black;
+}
+#nome_r_left{
+    text-align: left;
+    padding-left: 5%;
+    font-size: 14pt;
+    color: black;
+}
+#estrela_r{
+    position: absolute;
+    top: 68%;
+    left: 45%;
+
+}
+/* Dados dos Desenvolvedores - Andrias */
+.kit_andrias{
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    background-image: url("img/teste3.jpg");
+
+    border-spacing: 1px;
+    border-style: outset;
+    border-color: white;
+    box-shadow:
+            0 0 1px #000000,
+            0 0 1px #000000,
+            0 0 1px #000000,
+            0 0 1px #fff,
+            0 0 4px #fff,
+            0 0 4px #fff,
+            0 0 4px #fff,
+            0 0 10px #fff;
+    animation: boxpulsate 1.5s infinite alternate;
+}
+
+#img_andrias{
+    position: relative;
+    border: solid;
+    border-spacing: 1px;
+    border-color: grey;
+    top: 0;
+}
+#idade_a_left{
+    text-align: left;
+    padding-left: 5%;
+    font-size: 14pt;
+    color: black;
+
+}
+#idade_a_right {
+    text-align: left;
+    padding-left: 5%;
+    font-size: 14pt;
+    color: black;
+}
+#nome_a_left{
+    text-align: left;
+    padding-left: 5%;
+    font-size: 14pt;
+    color: black;
+}
+
+/* Rodapé */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #1d2028;
+    border-top: solid dimgray;
+}
+footer li{
+    display: inline-block;
+    max-width: 1100px;
+    padding: 0 2%;
+    font-size: 20px;
+    font-family: Bostero;
+}
+footer a{
+    color: dodgerblue;
+}

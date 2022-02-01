@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FEI HERO</title>
+    <link href="Estilo.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<p id="score">Score</p>
+<h1 id="marca_pontos"></h1>
+<p id="best_score"></p>
+<h1 id="best"></h1>
+
+<canvas id="myCanvas" height="680px" width="404px">Your browser does not support the canvas element.</canvas>
+
+
+<div class="botoes">
+<button id="easy" onclick="alt_velocidade(1)" type="button">Easy</button>
+<button id="normal" onclick="alt_velocidade(3)" type="button">Normal</button>
+<button id="hard" onclick="alt_velocidade(5)" type="button">Hard</button>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+        <a href="Desenvolvedores.html">Desenvolvedores</a>
+        <a href="Sobre.html">Como funciona o jogo?</a>
+    </div>
+</div>
+    <button id="start" onclick="start()" type="button">Start</button>
+    <button id="restart" onclick="reset()" type="button"><img src="img/Restart.png"></button>
+    <button id="stop" onclick="stop()" type="button">Stop</button>
+    <audio id="myAudio" preload="metadata">
+        <source src="Musicas/Green%20Day%20-%20Holiday.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
